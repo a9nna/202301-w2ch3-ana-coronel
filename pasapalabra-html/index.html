@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Pasapalabra HTML</title>
+  <link rel=stylesheet href="style.css" />
+
+</head>
+
+<body>
+  <div>
+    <span class="letter" id="a">A</span>
+    <span class="letter" id="b">B</span>
+    <span class="letter" id="c">C</span>
+    <span class="letter" id="d">D</span>
+    <span class="letter" id="e">E</span>
+    <span class="letter" id="f">F</span>
+    <span class="letter" id="g">G</span>
+    <span class="letter" id="h">H</span>
+    <span class="letter" id="i">I</span>
+    <span class="letter" id="j">J</span>
+    <span class="letter" id="k">K</span>
+    <span class="letter" id="l">L</span>
+    <span class="letter" id="m">M</span>
+    <span class="letter" id="n">N</span>
+    <span class="letter" id="ñ">Ñ</span>
+    <span class="letter" id="o">O</span>
+    <span class="letter" id="p">P</span>
+    <span class="letter" id="q">Q</span>
+    <span class="letter" id="r">R</span>
+    <span class="letter" id="s">S</span>
+    <span class="letter" id="t">T</span>
+    <span class="letter" id="u">U</span>
+    <span class="letter" id="v">V</span>
+    <span class="letter" id="w">W</span>
+    <span class="letter" id="x">X</span>
+    <span class="letter" id="y">Y</span>
+    <span class="letter" id="z">Z</span>
+
+    <div class="stopWatch" id="stopWatch">130</div>
+  </div>
+
+  <div class="container">
+    <p class="title">PASAPALABRA</p>
+
+    <div class="questions">
+      <p id="selectedQuestion">¡Bienvenido a Pasapalabra! Basado en el exitoso concurso de televisión Pasapalabra de
+        Telecinco. Las normas son muy sencillas:
+        Se mostrarán unas definiciones por pantalla y el usuario deberá responder con la palabra a la que corresponden y
+        dar al botón "RESPONDER" o a la tecla "ENTER".
+        El usuario tiene la opción dar al botón "PASAPALABRA" o a la tecla "ESPACIO" y dejar esa definición para más
+        adelante.</p>
+    </div>
+
+    <form>
+      <input type="text" class="answer " id="answer" spellcheck="false" required minlength="3" maxlength="20" size="30">
+    </form>
+
+    <button type="button" class="toRespond"><a>RESPONDER</a></button>
+    <button type="button" class="pasapalabra"><a>PASAPALABRA</a></button>
+    <button type="button" class="toPlay">¡A jugar!</button>
+
+  </div>
+  </div>
+
+  <script src="pasapalabra.js"></script>
+</body>
+
+</html>

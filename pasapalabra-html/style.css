@@ -1,0 +1,267 @@
+body {
+  background-color: rgb(128, 128, 240);
+}
+
+.letter {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  border: solid 1px white;
+  border-radius: 50%;
+  text-align: center;
+  padding: 10px;
+  background-color: #104989;
+  color: white;
+}
+
+.container {
+  position: absolute;
+  width: 550px;
+  height: auto;
+  border: none;
+  top: 82%;
+  left: 2em;
+}
+
+.title {
+  position: relative;
+  text-align: center;
+  color: #104989;
+  font-size: 70px;
+  font-weight: bold;
+  text-shadow: 0 0 2px white;
+}
+
+.questions {
+  display: table;
+  position: relative;
+  margin-top: -5%;
+  text-align: justify;
+  border: solid white;
+  border-radius: 10%;
+  width: 100%;
+  height: 13em;
+  padding: 20px;
+  overflow-wrap: break-word;
+  background-color: #104989;
+  color: white;
+}
+
+.questions > p {
+  display: table-cell;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.stopWatch {
+  position: absolute;
+  top: 15em;
+  left: 16em;
+  border: solid white;
+  width: 35px;
+  padding: 10px 5px 10px 5px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #104989;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.answer {
+  position: relative;
+  top: 1em;
+  left: 10%;
+  transform: translateX(-10%);
+  height: 25px;
+}
+.container > button.toPlay {
+  position: relative;
+  top: 40px;
+  left: 40px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #669cd9;
+  color: black;
+  border: solid #104989;
+  border-radius: 30%;
+}
+
+button.toPlay:hover {
+  color: #104989;
+  font-size: 30px;
+}
+
+.container > button.toRespond {
+  position: absolute;
+  margin-top: -24px;
+  left: 21em;
+  padding: 10px;
+  font-weight: bold;
+  background-color: rgb(5, 203, 5);
+  border: solid rgb(0, 117, 0);
+  border-radius: 30%;
+}
+
+button.toRespond:hover {
+  background-color: rgb(144, 220, 144);
+  color: rgb(0, 117, 0);
+  border: solid rgb(0, 117, 0);
+}
+
+.container > button.pasapalabra {
+  position: absolute;
+  margin-top: -24px;
+  left: 30em;
+  padding: 10px;
+  font-weight: bold;
+  background-color: rgb(215, 255, 34);
+  border: solid black;
+  border-radius: 30%;
+}
+
+button.pasapalabra:hover {
+  background-color: rgb(228, 243, 164);
+  color: black;
+  border: solid black;
+}
+
+@media screen and (min-width: 700px) {
+  .container {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    border: none;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .title {
+    position: relative;
+    text-align: center;
+    color: #104989;
+    font-size: 70px;
+    font-weight: bold;
+    text-shadow: 0 0 2px white;
+  }
+  .questions {
+    display: table;
+    position: relative;
+    margin-top: -5%;
+    text-align: justify;
+    border: solid white;
+    border-radius: 10%;
+    width: 100%;
+    height: 13em;
+    padding: 20px;
+    overflow-wrap: break-word;
+    background-color: #104989;
+    color: white;
+  }
+  .stopWatch {
+    position: absolute;
+    top: 15em;
+    left: 16em;
+    border: solid white;
+    width: 35px;
+    padding: 10px 5px 10px 5px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #104989;
+    color: white;
+  }
+  .container > button.toRespond {
+    position: absolute;
+    margin-top: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    font-weight: bold;
+    background-color: rgb(5, 203, 5);
+    border: solid rgb(0, 117, 0);
+    border-radius: 30%;
+  }
+  .container > button.pasapalabra {
+    position: absolute;
+    margin-top: -24px;
+    left: 70%;
+    transform: translateX(-50%);
+    padding: 10px;
+    font-weight: bold;
+    background-color: rgb(215, 255, 34);
+    border: solid black;
+    border-radius: 30%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .container {
+    position: absolute;
+    left: 70%;
+    width: 45%;
+    height: auto;
+    border: none;
+    top: 0%;
+  }
+  .title {
+    position: relative;
+    text-align: center;
+    color: #104989;
+    font-size: 90px;
+    font-weight: bold;
+    text-shadow: 0 0 2px white;
+  }
+  .questions {
+    display: table;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -10%;
+    text-align: justify;
+    border: solid white;
+    border-radius: 10%;
+    width: 80%;
+    height: 13em;
+    padding: 20px;
+    overflow-wrap: break-word;
+    background-color: #104989;
+    color: white;
+  }
+  .stopWatch {
+    position: absolute;
+    top: 15em;
+    left: 16em;
+    border: solid white;
+    width: 35px;
+    padding: 10px 5px 10px 5px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #104989;
+    color: white;
+  }
+  .container > button.toRespond {
+    position: absolute;
+    margin-top: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    font-weight: bold;
+    background-color: rgb(5, 203, 5);
+    border: solid rgb(0, 117, 0);
+    border-radius: 30%;
+  }
+  .container > button.pasapalabra {
+    position: absolute;
+    margin-top: -24px;
+    left: 70%;
+    transform: translateX(-50%);
+    padding: 10px;
+    font-weight: bold;
+    background-color: rgb(215, 255, 34);
+    border: solid black;
+    border-radius: 30%;
+  }
+}
