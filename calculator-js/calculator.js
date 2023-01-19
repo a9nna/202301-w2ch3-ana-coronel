@@ -1,24 +1,25 @@
 function calculator() {
   let number1;
   let number2;
-  let numbers = [];
-  let results = [];
+  const numbers = [];
+  const results = [];
 
   function isNumber(val) {
     if (val !== null && val.includes("/")) {
-      let operation = val;
-      let separation = operation.split("/");
+      const operation = val;
+      const separation = operation.split("/");
       val = separation[0] / separation[1];
     }
+
     if (!isNaN(val)) {
       numbers.push(val);
-    } else {
+    } else if (isNaN(val)) {
       alert("The entered data is not a number, please try again");
     }
   }
 
   function decimals(val) {
-    if (val % 1 !== 0) {
+    if (!val % 1 === 0) {
       results.push(val.toFixed(3));
     } else {
       results.push(val);
@@ -42,12 +43,13 @@ function calculator() {
     if (result1 % 1 !== 0) {
       result1 = result1.toFixed(3);
     }
+
     console.log(`The square root of ${numbers[0]} is ${result1}`);
   } else {
-    let addition = number1 + number2;
-    let substraction = number1 - number2;
-    let product = number1 * number2;
-    let division = number1 / number2;
+    const addition = number1 + number2;
+    const substraction = number1 - number2;
+    const product = number1 * number2;
+    const division = number1 / number2;
 
     decimals(addition);
     decimals(substraction);
