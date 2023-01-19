@@ -60,7 +60,7 @@ function calculator() {
     return results;
   };
 
-  const allResults = multipleOperations(...numbers);
+  const allResults = multipleOperations();
 
   console.log(`The result of addition is ${allResults[0]}`);
   console.log(`The result of substraction is ${allResults[1]}`);
