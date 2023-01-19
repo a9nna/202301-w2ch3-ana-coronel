@@ -2,13 +2,19 @@ function calculator() {
   let number;
   const numbers = [];
   const results = [];
-  const numbersToOperateWith = [];∫
+  const numbersToOperateWith = [];
 
   const isNumber = (val) => {
     if (val !== null && val.includes("/")) {
       const operation = val;
       const separation = operation.split("/");
       val = separation[0] / separation[1];
+    }
+
+    if (!isNaN(val)) {
+      numbers.push(val);
+    } else if (isNaN(val)) {
+      alert("The entered data is not a number, please try again");
     }
   };
 
@@ -53,12 +59,6 @@ function calculator() {
 
     return results;
   };
-
-  if (!isNaN(val)) {
-    numbers.push(val);
-  } else if (isNaN(val)) {
-    alert("The entered data is not a number, please try again");
-  }
 
   const allResults = multipleOperations(...numbers);
 
